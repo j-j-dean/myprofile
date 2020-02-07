@@ -1,0 +1,87 @@
+
+.body {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+}
+
+.full-skip-navbar {
+    padding-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#index-image {
+    position: relative;
+    height: 800px;
+    width: 100%;
+}
+
+#index-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: -10%;
+}
+
+#index-header {
+    position: relative;
+    padding-top: 30%;
+    padding-left: 25%;
+}
+
+.move-right {
+    padding-left: 5%;
+}
+
+#footer-container {
+    position: relative;
+    margin-top: -10%;
+    padding: 0;
+}
+
+#profile-footer {
+    position: absolute;
+    background-color: darkgray;
+    width: 100%;
+    padding-right: 20px;
+    padding-top: 10px;
+    border: 1px solid gray;
+    color: black;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-lt-gray {
+    color: gainsboro;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-indent {
+    text-indent: 50px;
+}
+
+.font-times {
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+
+.font-franklin {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+}
+
+.font-italic {
+    font-style: italic;
+}
