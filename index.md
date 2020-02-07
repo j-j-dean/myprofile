@@ -35,21 +35,9 @@
     </nav>
     
     <div class="full-skip-navbar">
-        <section id="index-image">
-            <img id="index-background-image" src="./Montana.jpg" />
-            <header id="index-header">
-                <h1 class="text-white">Do you see obstacles or opportunities?</h1>
-                <h3 class="text-white move-right">
-                    Dream Big.  Imagine the future.
-                    Make it happen.
-                </h3>
-            </header>
-        </section>
-        <div id="footer-container">
-            <footer id="profile-footer" class="text-right">
-                <p>Dec 2019 - Personal Website with CSS, Bootstrap, AngularJS</p>
-            </footer>
-        </div>
+        <article>
+            <h1>Welcome to My Profile</h1>
+        </article>
     </div>
 </body>
 </html>
