@@ -1,4 +1,7 @@
 
+/************************
+*  Common styling
+*************************/
 .body {
     padding-left: 0;
     padding-right: 0;
@@ -13,45 +16,8 @@
     width: 100%;
 }
 
-#index-image {
-    position: relative;
-    height: 800px;
-    width: 100%;
-}
-
-#index-background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    margin-top: -10%;
-}
-
-#index-header {
-    position: relative;
-    padding-top: 30%;
-    padding-left: 25%;
-}
-
-.move-right {
-    padding-left: 5%;
-}
-
-#footer-container {
-    position: relative;
-    margin-top: -10%;
-    padding: 0;
-}
-
-#profile-footer {
-    position: absolute;
-    background-color: darkgray;
-    width: 100%;
-    padding-right: 20px;
-    padding-top: 10px;
-    border: 1px solid gray;
-    color: black;
+.nav-active {
+    background-color: cyan;
 }
 
 .text-black {
@@ -66,22 +32,418 @@
     color: gainsboro;
 }
 
-.text-red {
-    color: red;
+.text-dk-underline {
+    color: #444;
+    text-decoration: underline;
 }
 
-.text-indent {
-    text-indent: 50px;
+.text-red {
+    color: red;
 }
 
 .font-times {
     font-family: 'Times New Roman', Times, sans-serif;
 }
 
+.font-arial {
+    font-family: Arial, serif;
+}
+
 .font-franklin {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
 }
 
+.font-roboto {
+    font-family: Roboto, Times, sans-serif;
+}
+
 .font-italic {
     font-style: italic;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.move-right {
+    padding-left: 5%;
+}
+
+.quote-border {
+    border-bottom: 1px solid black;
+}
+
+.quote-padding {
+    padding-top: 20px;
+    padding-bottom: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.bg-blue-color {
+    background-color: cornflowerblue;
+}
+
+.bg-gray-color {
+    background-color: #999;
+}
+
+.flex-row {
+    display: flex;
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    width: 100%;
+}
+
+.popup {
+    position: relative;
+    cursor: pointer;
+}
+
+.popup .popup-contents {
+    visibility: hidden;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    border-radius: 6px;
+    padding: 2% 4%;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+.popup .show {
+    visibility: visible;
+}
+
+.avatar {
+    vertical-align: middle;
+    padding-left: 5%;
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.testimony-border {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+}
+
+/*****************************
+* Home (index) page styling
+*****************************/
+#index-image {
+    position: relative;
+    height: 800px;
+    width: 100%;
+}
+
+#index-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+@media screen and (min-width: 1001px) {
+    #index-background-image {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    #index-background-image {
+        margin-top: -10%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #index-background-image {
+        margin-top: -30%;
+    }
+}
+
+#index-header {
+    position: relative;
+    padding-top: 30%;
+    padding-left: 25%;
+}
+
+.footer-container {
+    position: relative;
+    padding: 0;
+}
+
+@media screen and (min-width: 801px) {
+    .footer-index-margin {
+        margin-top: -10%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer-index-margin {
+        margin-top: -30%;
+    }
+}
+
+.profile-footer {
+    position: absolute;
+    background-color: darkgray;
+    width: 100%;
+    padding-right: 20px;
+    padding-top: 10px;
+    border: 1px solid gray;
+    color: black;
+}
+
+.stars {
+    font-size: 100%;
+    color: blue;
+    vertical-align: central;
+}
+
+/************************
+* skills page styling
+************************/
+
+#skills-section, #tools-section {
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 801px) {
+    #skills-section h3, #tools-section h3 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #skills-section h3, #tools-section h3 {
+        width: 100%;
+    }
+}
+
+#skills-section h3, #tools-section h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#skills-section h3>span, #tools-section h3>span {
+    float: right;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 801px) {
+    #skills-section h3:nth-of-type(4n+1),
+    #skills-section h3:nth-of-type(4n+4),
+    #tools-section h3:nth-of-type(4n+1),
+    #tools-section h3:nth-of-type(4n+4) {
+        background-color: #999;
+    }
+    #skills-section h3:nth-of-type(4n+2),
+    #skills-section h3:nth-of-type(4n+3),
+    #tools-section h3:nth-of-type(4n+2),
+    #tools-section h3:nth-of-type(4n+3) {
+        background-color: #bbb;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #skills-section h3:nth-of-type(2n+1),
+    #tools-section h3:nth-of-type(2n+1) {
+        background-color: #999;
+    }
+    #skills-section h3:nth-of-type(2n+2),
+    #tools-section h3:nth-of-type(2n+2) {
+        background-color: #bbb;
+    }
+}
+
+/*****************************
+*  education page styling
+******************************/
+
+#ed-section {
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+.ed-left-column {
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #aaa;
+}
+
+.ed-right-column {
+    width: 70%;
+    padding: 20px;
+    background-color: #bbb;
+}
+
+/*****************************
+*  experiences page styling
+******************************/
+
+#exp-section {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    width: 90%;
+}
+
+.exp-left-column {
+    width: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #aaa;
+}
+
+.exp-right-column {
+    width: 60%;
+    padding: 20px;
+    background-color: #bbb;
+}
+
+/*****************************
+*  about page styling
+******************************/
+
+@media screen and (min-width: 801px) {
+    #profile-section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #profile-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+#profile-past, #profile-info, #profile-solution {
+    margin-top: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+#profile-info img {
+    width: 50%;
+}
+
+@media screen and (min-width: 801px) {
+    #profile-past {
+        margin-left: 5%;
+        padding-right: 20px;
+    }
+
+    #profile-info {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-right: 1px dashed black;
+        border-left: 1px dashed black;
+    }
+
+    #profile-solution {
+        margin-right: 5%;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #profile-past, #profile-info, #profile-solution {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: auto;
+    }
+    #profile-info {
+        order: 1;
+    }
+    #profile-past {
+        order: 2;
+    }
+    #profile-solution {
+        order: 3;
+    }
+}
+
+/*****************************
+*  projects page styling
+******************************/
+
+#projects-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    width: 90%;
+}
+
+@media screen and (min-width: 801px) {
+    .each-project-section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .each-project-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-img {
+        order: 1;
+    }
+
+    .project-description {
+        padding-left: 20px;
+        order: 2;
+    }
+}
+
+.each-project-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.project-img {
+    max-width: 100%;
+    max-height: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    height: auto;
 }
