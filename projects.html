@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeff Dean Profile - Projects</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./site.js"></script>
+    <link rel="stylesheet" href="./site.css" asp-append-version="true" />
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="topnav container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="./index.html" id="Home" class="navbar-brand">Home</a>
+                <a href="./experiences.html" id="Experiences" class="navbar-brand">Experience</a>
+            </div>
+            <div class="navbar-right navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li> <a href="./education.html" id="Education">Education</a></li>
+                    <li> <a href="./skills.html" id="Skills">Skills</a></li>
+                    <li> <a href="./projects.html" id="Projects" class="nav-active">Projects</a></li>
+                    <li> <a href="./about.html" id="About">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="full-skip-navbar bg-blue-color">
+        <div class="quote-border quote-padding text-center font-franklin font-italic">
+            <h1 class="text-black">
+                "Every job is a self portrait of the person who did it.  Autograph your
+                work with <span class="text-red">excellence</span>."
+            </h1>
+            <h3 class="text-red">-Author Unknown</h3>
+            <br />
+        </div>
+
+        <section id="projects-section">
+            <section class="each-project-section">
+                <img class="project-img" src="./GRO.jpg" />
+                <section class="project-description">
+                    <p class="h2 text-center">Gamma Ray Observatory</p>
+                    <p class="h3">
+                        I came on board this project a year before launch of the satellite.  Most
+                        of the software to support spacecraft operations were complete.  I learned
+                        how to work with a team to correct discrepencies.  I learned about the 
+                        software life cycle through experience and through on site training classes.
+                        I was responsible for implementing new requirements and updating the
+                        corresponding documentation for the user (user's guide and design documents).
+                        I was instrumental in developing software to perform limit testing allowing
+                        the flight operations team to monitor the health and safety of the spacecraft. 
+                        The software was developed in FORTRAN using a Perkin-Elmer computer.  On site 
+                        at NASA we had removable disc packs that housed the software for various 
+                        spacecraft that were scheduled around the clock to make use of limited resources.
+                    </p>
+                </section>
+            </section>
+            <section class="each-project-section">
+                <section class="project-description">
+                    <p class="h2 text-center">Wind/Polar</p>
+                    <p class="h3">
+<!--Here-->
+                       This was a great project to work on.  I was given the responsibility to develop
+                       the command system for satellite control center.  
+                    </p>
+                </section>
+                <img class="project-img" src="./POLAR.jpg" alt="Wind/Polar" />
+            </section>
+            <section class="each-project-section">
+                <img class="project-img" src="./SOHO.jpg" alt="SOHO" />
+                <section class="project-description">
+                    <p class="h2 text-center">SOHO</p>
+                    <p class="h3">
+<!--Here-->
+                        SOHO info...
+                    </p>
+                </section>
+            </section>
+            <section class="each-project-section">
+                <section class="project-description">
+                    <p class="h2 text-center">VBS</p>
+                    <p class="h3">
+<!--Here-->
+                        VBS sets...
+                    </p>
+                </section>
+                <div id="vbsCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#vbsCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#vbsCarousel" data-slide-to="1"></li>
+                        <li data-target="#vbsCarousel" data-slide-to="2"></li>
+                        <li data-target="#vbsCarousel" data-slide-to="3"></li>
+                        <li data-target="#vbsCarousel" data-slide-to="4"></li>
+                        <li data-target="#vbsCarousel" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="project-img" src="./VBS-Norway.jpg" alt="VBS">
+                        </div>
+                        <div class="item">
+                            <img class="project-img" src="./VBS-funfactory.jpg" alt="Norway">
+                        </div>
+                        <div class="item">
+                            <img class="project-img" src="./VBS-outerspace.jpg" alt="Space">
+                        </div>
+                        <div class="item">
+                            <img class="project-img" src="./VBS-Africa.jpg" alt="Africa">
+                        </div>
+                        <div class="item">
+                            <img class="project-img" src="./VBS-space2.jpg" alt="Africa">
+                        </div>
+                        <div class="item">
+                            <img class="project-img" src="./VBS-space3.jpg" alt="Africa">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#vbsCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#vbsCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+            <section class="each-project-section">
+                <div id="diyCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#diyCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#diyCarousel" data-slide-to="1"></li>
+                        <li data-target="#diyCarousel" data-slide-to="2"></li>
+                        <li data-target="#diyCarousel" data-slide-to="3"></li>
+                        <li data-target="#diyCarousel" data-slide-to="4"></li>
+                        <li data-target="#diyCarousel" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="project-img" src="./community-swva.jpg" alt="SW Virginia">
+                            <div class="carousel-caption">
+                                <h3>Southwest Virginia outreach</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="project-img" src="./diy-bathroom.jpg" alt="Bathroom">
+                            <div class="carousel-caption">
+                                <h3 class="text-black">Bath remodeling</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="project-img" src="./diy-cathouse.jpg" alt="Cat House">
+                            <div class="carousel-caption">
+                                <h3>Kitty Condo Construction</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="project-img" src="./diy-oldstove.jpg" alt="Old Stove">
+                            <div class="carousel-caption">
+                                <h3>Old Stove</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="project-img" src="./diy-newstove.jpg" alt="New Stove">
+                            <div class="carousel-caption">
+                                <h3>New Stove</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="project-img" src="./diy-windows.jpg" alt="Windows">
+                            <div class="carousel-caption">
+                                <h3>Replacement windows</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#diyCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#diyCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <section class="project-description">
+                    <p class="h2 text-center">DIY Projects</p>
+                    <p class="h3">
+<!--Here-->
+                        Home and Community Projects....
+                    </p>
+                </section>
+            </section>
+        </section>
+    </div>
+
+    <footer class="footer-container profile-footer text-right">
+        <p>Feb 2020 - Jeffrey Dean profile - Software Application Developer</p>
+    </footer>
+</body>
+</html>
