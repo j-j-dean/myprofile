@@ -90,11 +90,13 @@
 
 .flex-row {
     display: flex;
+    flex-direction: row;
     width: 100%;
 }
 
 .flex-column {
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -128,9 +130,10 @@
 }
 
 .testimony-border {
-    border: 1px;
-    border-color: black;
-    border-style: solid;
+    border: 1px solid #2d6898;
+    background-color: #538fbe;
+    color: #fff;
+    box-shadow: 0px 6px 0px #2b638f;
     border-radius: 50%;
     width: 50%;
     margin-left: auto;
@@ -154,12 +157,6 @@
     height: 100%;
 }
 
-@media screen and (min-width: 1001px) {
-    #index-background-image {
-        width: 100%;
-    }
-}
-
 @media screen and (min-width: 801px) {
     #index-background-image {
         margin-top: -10%;
@@ -168,14 +165,25 @@
 
 @media screen and (max-width: 800px) {
     #index-background-image {
-        margin-top: -30%;
+        margin-top: -20%;
     }
 }
 
 #index-header {
     position: relative;
-    padding-top: 30%;
     padding-left: 25%;
+}
+
+@media screen and (min-width: 801px) {
+    #index-header {
+        padding-top: 30%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #index-header {
+        padding-top: 40%;
+    }
 }
 
 .footer-container {
@@ -191,7 +199,7 @@
 
 @media screen and (max-width: 800px) {
     .footer-index-margin {
-        margin-top: -30%;
+        margin-top: -20%;
     }
 }
 
