@@ -421,6 +421,10 @@
         flex-direction: row;
         width: 100%;
     }
+
+    .project-description {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -434,9 +438,13 @@
     }
 
     .project-description {
-        padding-left: 20px;
         order: 2;
     }
+}
+
+.project-description {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .each-project-section {
