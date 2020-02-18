@@ -165,24 +165,32 @@
 
 @media screen and (max-width: 800px) {
     #index-background-image {
-        margin-top: -20%;
+        margin-top: -15%;
     }
 }
 
 #index-header {
     position: relative;
-    padding-left: 25%;
+    padding-left: 5%;
 }
 
 @media screen and (min-width: 801px) {
-    #index-header {
-        padding-top: 30%;
+    #index-header h1 {
+        padding-top: 25%;
+        padding-left: 25%;
+    }
+    #index-header h3 {
+        padding-left: 25%;
     }
 }
 
 @media screen and (max-width: 800px) {
-    #index-header {
-        padding-top: 40%;
+    #index-header h1 {
+        padding-top: 25%;
+        padding-left: 25%;
+    }
+    #index-header h3 {
+        padding-left: 25%;
     }
 }
 
@@ -199,7 +207,7 @@
 
 @media screen and (max-width: 800px) {
     .footer-index-margin {
-        margin-top: -20%;
+        margin-top: -15%;
     }
 }
 
